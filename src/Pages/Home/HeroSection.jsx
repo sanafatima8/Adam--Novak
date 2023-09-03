@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function HeroSection() {
   const quotes = [
@@ -7,38 +7,43 @@ export default function HeroSection() {
       author: "Alexander Payne",
       affiliation: "Academy-Award winning writer/director of Sideways and The Descendants"
     },
-    // ... Add other quotes ...
+    
+ 
   ];
 
+ 
   const [quoteIndex, setQuoteIndex] = useState(0);
   const [quoteOffset, setQuoteOffset] = useState(0);
-  const [forwards, setForwards] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (forwards) {
-        if (quoteOffset >= quotes[quoteIndex].quote.length) {
-          setForwards(false);
-        } else {
-          setQuoteOffset(quoteOffset + 1);
-        }
-      } else {
-        if (quoteOffset === 0) {
-          setForwards(true);
-          setQuoteIndex((quoteIndex + 1) % quotes.length);
-        } else {
-          setQuoteOffset(quoteOffset - 1);
-        }
+    const currentQuote = quotes[quoteIndex].quote;
+       
+
+    // Function to type the quote
+    const typeQuote = () => {
+      if (quoteOffset < currentQuote.length) {
+        setQuoteOffset(quoteOffset + 1);
       }
-    }, 70);
+    };
+
+    // Start typing when the component mounts
+    const typingInterval = setInterval(typeQuote, 50);
+
+    // Stop typing after the quote is fully typed
+    if (quoteOffset === currentQuote.length) {
+      clearInterval(typingInterval);
+    }
 
     return () => {
-      clearInterval(interval);
+      clearInterval(typingInterval);
     };
-  }, [quoteIndex, quoteOffset, forwards]);
+  }, [quoteIndex, quoteOffset, quotes]);
 
   const currentQuote = quotes[quoteIndex];
   const animatedQuote = currentQuote.quote.substr(0, quoteOffset);
+
+
+
 
   return (
     <div className="hero-container">

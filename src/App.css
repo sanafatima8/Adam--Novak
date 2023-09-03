@@ -316,6 +316,7 @@ h2 {
   max-width: 800px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center-align the quotes content */
   padding: 20px;
+  margin-top: 20px;
   border-radius: 10px;
   background-color: var(--white); /* Background color similar to the navbar */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -325,6 +326,7 @@ h2 {
   font-size: 24px; /* Adjust the font size as needed */
   font-weight: 400;
   line-height: 36px;
+  
   color: var(--darkblue); /* Text color similar to the navbar content */
   margin-bottom: 20px; /* Adjust the margin as needed */
 }
@@ -366,8 +368,6 @@ h2 {
     margin-top: 5px; /* Adjust margin for smaller screens */
   }
 }
-
-
 
 
 /* Skills Section Style */
