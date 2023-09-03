@@ -1,0 +1,112 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "title": "Front-End",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "2",
+      "src": "./img/tag-1.png",
+      "title": "Back-End",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    },
+    {
+      "id": "3",
+      "src": "./img/feather-pen-2.png",
+      "title": "UI & UX Design",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+    }
+
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/rat_park.jpg",
+      "title": "Rat Park",
+      "buttonText": "Excerpt 1",
+      "Link": "https://theartifactuals.com/rat-park/",
+      "additionalButtons": [
+        {
+          "link": "https://theartifactuals.com/excerpt-2-from-rat-park/ ",
+          "text": "Excerpt 2"
+        },
+        {
+          "link":"https://rue-morgue.com/exclusive-interview-navigate-the-streets-of-rat-park-with-wme-head-of-story-adam-novak/ ",
+          "text": "Rue Morgue"
+        },
+        {
+          "link": "https://residence11.com/short-stories/fiction/fiction-excerpt-rat-park-by-adam-novak ",
+          "text": "Residence11"
+        },
+        {
+          "link": "https://www.youtube.com/watch?v=DKIgmHT6lZ4 ",
+          "text": "Book Soup"
+        }
+       
+      ]
+
+
+      
+    },
+    {
+      "id": "2",
+      "src": "./img/freaks_of_the_industry.jpg",
+      "title": "Freak of the industry",
+      "buttonText": "Excerpt 1",
+      "Link": "https://theartifactuals.com/in-honor-of-the-oscars-2022-from-freaks-of-the-industry/ ",
+      "additionalButtons": [
+        {
+          "link": "https://www.hollywoodreporter.com/news/general-news/wme-img-vet-adam-novak-dishes-new-novel-rules-fight-club-1026322/amp/ ",
+          "text": "WME News"
+        }
+      
+      
+       
+      ]
+    },
+
+    {
+      "id": "3",
+      "src": "./img/take_fountain.jpg",
+      "title": "Take Fountain",
+      "buttonText": "Foreward",
+      "Link": "https://www.forewordreviews.com/reviews/take-fountain/ ",
+      "additionalButtons": [
+        {
+          "link": "https://variety.com/2015/voices/columns/take-foundation-adam-novak-wme-1201552772/amp/?fbclid=PAAaZn-W5PyNVVdEPL7WKKZUpOl7nej-24PjkvxZzaMT30T6JexIsWqT5tvtk_aem_Aezi9ir8SBr0YhOjQsWp0vpbAPWS_5kud_Me0Icz0_m7hUzkUgvnQ6LPr1Hg7eQsmRE ",
+          "text": "WME News"
+        }
+      
+      
+       
+      ]
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "count": "5",
+      "src": "./img/avatar-image.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Dianne Russel",
+      "author_designation": "Starbucks"
+    },
+    {
+      "id": "2",
+      "count": "5",
+      "src": "./img/avatar-image-1.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kristin Watson",
+      "author_designation": "Louis Vuitton"
+    },
+    {
+      "id": "3",
+      "count": "5",
+      "src": "./img/avatar-image-2.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "author_name": "Kathryn Murphy",
+      "author_designation": "McDonald's"
+    }
+  ]
+}
