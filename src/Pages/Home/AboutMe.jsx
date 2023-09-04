@@ -64,7 +64,7 @@ export default function AboutMe() {
                 Adam Novak's crime novel, The Non-Pro, skewers the Hollywood scene like a picador to a bull. 
                 When movie industry insider Jerry Makos dies under mysterious circumstances, 
                 his brother Josh seeks the killer while trying not to get sucked into the abyss of the movie industry.
-                 Who would want his brother dead? That was the problem. . .the list of social climbers and celebrity parasites seemed to be endless. 
+                 Who would want his brother dead? That was the problem.... the list of social climbers and celebrity parasites seemed to be endless. 
                  Just when it seems like Josh will never find the killer, the planets align for a perfect third act..
           </p>
           

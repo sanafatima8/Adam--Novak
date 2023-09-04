@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 export default function IndustrySection() {
     const quotes = [
         {
-            quote: "\" So successfully strange it's almost its own genre. Holding a mirror, if not a hall of mirrors to our culture where we disappear and find ourselves at the same time. \"",
-            author: "Aris Janigan",
-            affiliation: "author of Waiting for Lipchitz at Chateau Marmont"
+            quote: "\"The ghost of F. Scott Fitzgerald nods in approval. \"",
+            author: "Lem Dobbs",
+            affiliation: " writer of The Limey"
         },
         // ... Add other quotes ...
     ];
@@ -66,13 +66,7 @@ export default function IndustrySection() {
           <p className="hero--section-description">
           Studio executive Rodney Muir quits the business after a prostitution scandal and returns home to Washington, DC where he falls for two women, the unhappy wife of a diplomat who harbors a dark secret and a federal agent investigating a Starbucks triple homicide who uncovers a White House conspiracy that threatens them all.
           </p>
-          <p className="hero--section-description">
-          Low-budget horror filmmaker Thor Rosenthal gets a shot at the big time when homeless junkie turned Oscar-winning movie star Antwon Legion agrees to star in his desert thriller about a carpenter named Jesus investigating a serial killer stalking Mary Magdalene in Golgotha. The only problem is the movie star playing the messiah might be the Anti-Christ.
-         </p>
-                <p className="hero--section-description">
-                Low-budget horror filmmaker Thor Rosenthal gets a shot at the big time when homeless junkie turned Oscar-winning movie star Antwon Legion agrees to star in his desert thriller about a carpenter named Jesus investigating a serial killer stalking Mary Magdalene in Golgotha. The only problem is the movie star playing the messiah might be the Anti-Christ.
-
-                </p>
+     
           
         </div>
       <br />

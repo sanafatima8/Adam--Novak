@@ -168,11 +168,19 @@ h2 {
 .nav-title{
      color: black;
 }
+.first-tone {
+  color: #c24d2c; /* Red color for the first part of the title */
+}
+
+.second-tone {
+  color: #1a2639; /* Blue color for the second part of the title */
+}
+
 .navbar--items > ul {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 22px;
+  gap: 17px;
   text-decoration: none;
 }
 .navbar--items ul > li > a {
@@ -472,6 +480,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  align-items: stretch;
 }
 .portfolio--container {
   display: flex;
@@ -485,6 +494,11 @@ h2 {
   justify-content: center;
   gap: 42.6px;
   width: 100%;
+}
+.portfolio--section--cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row if necessary */
+  gap: 32px; /* Adjust the gap between cards as needed */
 }
 
 
@@ -658,42 +672,48 @@ h2 {
 
 
 
+#animatedImage:hover {      
+  filter: grayscale(100%); /* Converts the image to grayscale */
+  transition: filter 0.3s ease;
+}
 
+/* #animatedImage {
 
-#animatedImage {
-  /* Apply initial styles to the image */
   width: 100%;
   height: 100%;
-  /* Add a CSS transition for smooth animations */
+  
   transition: transform 0.3s ease;
 }
 
 #animatedImage:hover {
-  /* Apply the animation when hovering over the image */
-  transform: scale(1.2); /* You can change the scale value as per your preference */
+ 
+  transform: scale(1.2);
   
  
-}
+} */
 
-#animatedImage2 {
-  /* Apply initial styles to the image */
+/* #animatedImage2 {
+  
   width: 100%;
   height: 100%;
-  /* Add a CSS transition for smooth animations */
+  
   transition: transform 0.3s ease;
 }
 
 #animatedImage2:hover {
-  transform: rotateY(180deg); /* Rotates the image around the Y-axis */
+  transform: rotateY(180deg); 
   transition: transform 0.3s ease;
   
  
+} */
+#animatedImage2:hover {      
+  filter: grayscale(100%); /* Converts the image to grayscale */
+  transition: filter 0.3s ease;
 }
-
-#animatedImage3:hover {
-  transform: scale(1.1); /* Increase scale for a pulse effect */
+/* #animatedImage3:hover {
+  transform: scale(1.1); 
   transition: transform 0.3s ease;
-  animation: pulse 1s infinite; /* Create a pulse animation */
+  animation: pulse 1s infinite; 
 }
 
 @keyframes pulse {
@@ -703,34 +723,49 @@ h2 {
   50% {
     transform: scale(1.1);
   }
+} */
+#animatedImage3:hover {      
+  filter: grayscale(100%); /* Converts the image to grayscale */
+  transition: filter 0.3s ease;
 }
-
 #animatedImage4:hover {      
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
 }
 
-#animatedImage5:hover {
-  transform: translateY(10px); /* Slide the image down slightly */
-  filter: blur(5px); /* Add a blur effect */
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
 
-#animatedImage6 {
-  transition: border-radius 0.3s ease; /* Smoothly transition border-radius property */
+/* #animatedImage5:hover {
+  transform: translateY(10px); 
+  filter: blur(5px); 
+  transition: transform 0.3s ease, filter 0.3s ease;
+} */
+
+#animatedImage5:hover{
+  filter: grayscale(100%); /* Converts the image to grayscale */
+  transition: filter 0.3s ease;
+  }
+/* #animatedImage6 {
+  transition: border-radius 0.3s ease;
 }
 
 #animatedImage6:hover {
-  border-radius: 50%; /* Apply rounded corners on hover */
+  border-radius: 50%;
+} */
+#animatedImage6:hover{
+filter: grayscale(100%); /* Converts the image to grayscale */
+transition: filter 0.3s ease;
 }
-
-#animatedImage7 {
-  transition: transform 0.3s ease; /* Smoothly transition scale property */
+#animatedImage7:hover{
+  filter: grayscale(100%); /* Converts the image to grayscale */
+  transition: filter 0.3s ease;
+  }
+/* #animatedImage7 {
+  transition: transform 0.3s ease; 
 }
 
 #animatedImage7:hover {
-  transform: scale(0.9); /* Adjust the scale value for zooming out */
-}
+  transform: scale(0.9); 
+} */
 
 
 /* 

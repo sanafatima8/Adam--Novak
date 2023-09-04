@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 export default function AudioSection() {
     const quotes = [
         {
-            quote: "\" Adam Novak has a merciless eye for a society in which striving replaces every consideration of morality. \"",
+            quote: "\"Adam Novak has a merciless eye for a society in which striving replaces every consideration of morality. \"",
             author: "Michael Tolkin",
             affiliation: "author of The Player"
         }

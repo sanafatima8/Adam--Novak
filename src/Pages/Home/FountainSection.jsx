@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 export default function FountainSection() {
   const quotes = [
     {
-        quote: "\" Strange genius mixed with stomach-turning madness. \"",
-        author: "Matt Greenberg",
-        affiliation: "screenwriter of 1408 and Pet Sematary"
+        quote: "\" A dark unforgettable tour inside the belly of the Hollywood Beast. Novak knows this world, and it shows. \"",
+        author: "D.B. Weiss",
+        affiliation: "creator or HBO's Game of Thrones"
     },
     // ... Add other quotes ...
 ];

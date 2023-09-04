@@ -24,17 +24,14 @@
       "id": "1",
       "src": "./img/rat_park.jpg",
       "title": "Rat Park",
-      "buttonText": "Excerpt 1",
+      "buttonText": "Artifact 1",
       "Link": "https://theartifactuals.com/rat-park/",
       "additionalButtons": [
         {
           "link": "https://theartifactuals.com/excerpt-2-from-rat-park/ ",
-          "text": "Excerpt 2"
+          "text": "Artifact 2"
         },
-        {
-          "link":"https://rue-morgue.com/exclusive-interview-navigate-the-streets-of-rat-park-with-wme-head-of-story-adam-novak/ ",
-          "text": "Rue Morgue"
-        },
+       
         {
           "link": "https://residence11.com/short-stories/fiction/fiction-excerpt-rat-park-by-adam-novak ",
           "text": "Residence11"
@@ -53,12 +50,12 @@
       "id": "2",
       "src": "./img/freaks_of_the_industry.jpg",
       "title": "Freak of the industry",
-      "buttonText": "Excerpt 1",
+      "buttonText": "Artifact 1",
       "Link": "https://theartifactuals.com/in-honor-of-the-oscars-2022-from-freaks-of-the-industry/ ",
       "additionalButtons": [
         {
           "link": "https://www.hollywoodreporter.com/news/general-news/wme-img-vet-adam-novak-dishes-new-novel-rules-fight-club-1026322/amp/ ",
-          "text": "WME News"
+          "text": "THR"
         }
       
       
@@ -70,7 +67,7 @@
       "id": "3",
       "src": "./img/take_fountain.jpg",
       "title": "Take Fountain",
-      "buttonText": "Foreward",
+      "buttonText": "Forward",
       "Link": "https://www.forewordreviews.com/reviews/take-fountain/ ",
       "additionalButtons": [
         {

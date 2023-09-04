@@ -43,7 +43,7 @@ export default function Shirt() {
     
       <div className="hero--section--content--box about--section--box">
         <div className="hero--section--content">  
-        <h1 className="skills-section--heading">Shirt</h1>
+        <h1 className="skills-section--heading">Swag</h1>
           <p className="hero--section-description">
          
                Show your support and nab some swag!
@@ -55,7 +55,7 @@ export default function Shirt() {
       <br />
       <a href="https://www.funnyshirts.org/design/4142349/Rat+Park+w%2F+back" target="_blank">
       <button className="btn btn-primary">
-      <span>Hurry!</span><span>Buy Swag</span>
+      <span>Buy Swag</span>
          </button>
       </a>
        

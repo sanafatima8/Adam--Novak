@@ -25,7 +25,7 @@ export default function Adam() {
         </div>
       <br />
       <br />
-      <a href="mailto:anovak@icloud.com" target="_blank">
+      <a href="mailto:anovak99@icloud.com" target="_blank">
       <button className="btn btn-primary">
       <span>Coffee? </span><span>Email Me</span>
          </button>

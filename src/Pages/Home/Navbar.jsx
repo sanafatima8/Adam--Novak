@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import ScrollReveal from "scrollreveal";
+
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -25,19 +27,34 @@ function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  useEffect(() => {
+    // Initialize Scroll Reveal
+    const sr = ScrollReveal();
+    
+    // Configure the animation for the navbar content
+    sr.reveal(".navbar--content", {
+      duration: 1000, // Animation duration in milliseconds
+      origin: "top", // Starting point of the animation
+      distance: "20px", // Distance the element moves during the animation
+      delay: 200, // Delay before the animation starts
+    });
+  }, []);
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu();
     }
   }, []);
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="nav-title">
-           
-      <h1> Adam Novak</h1>
-      </div>
+  <h1>
+    <span className="first-tone">Take</span>
+    <span className="second-tone">Novak</span>
+  </h1>
+</div>
+
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
@@ -55,11 +72,11 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
               to="heroSection"
               className="navbar--content"
             >
-              Home
+              Rat Park
             </Link>
           </li>
           <li>
@@ -69,39 +86,11 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
-              to="Excerpts"
-              className="navbar--content"
-            >
-              Excerpts
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="Podcast"
-              className="navbar--content"
-            >
-              Podcasts
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              duration={1000}
               to="Nonpro"
               className="navbar--content"
             >
-              Non Pro
+              The Non-Pro
             </Link>
           </li>
           <li>
@@ -111,7 +100,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
               to="Fountain"
               className="navbar--content"
             >
@@ -125,25 +114,11 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
-              to="TShirt"
-              className="navbar--content"
-            >
-              Tshirt
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              duration={1000}
               to="Industry"
               className="navbar--content"
             >
-              Freak Of Industry
+              Freaks Of the Industry
             </Link>
           </li>
           <li>
@@ -153,14 +128,55 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
+              to="Excerpts"
+              className="navbar--content"
+            >
+              Excerpts
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              to="Podcast"
+              className="navbar--content"
+            >
+              Podcasts
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              to="TShirt"
+              className="navbar--content"
+            >
+            Swag
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
               to="Audio"
               className="navbar--content"
             >
               Audio
             </Link>
           </li>
-        
           <li>
             <Link
               onClick={closeMenu}
@@ -168,15 +184,12 @@ function Navbar() {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
+              duration={1000}
               to="Adam"
               className="navbar--content"
             >
-              About Me
-            </Link>
-          
-          
-           
+              Contact
+            </Link>         
           </li>
         </ul>
       </div>
