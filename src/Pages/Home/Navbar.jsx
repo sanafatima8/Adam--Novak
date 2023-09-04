@@ -129,6 +129,20 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={1000}
+              to="Audio"
+              className="navbar--content"
+            >
+              Audio
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
               to="Excerpts"
               className="navbar--content"
             >
@@ -161,20 +175,6 @@ function Navbar() {
               className="navbar--content"
             >
             Swag
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-              to="Audio"
-              className="navbar--content"
-            >
-              Audio
             </Link>
           </li>
           <li>

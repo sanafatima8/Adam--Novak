@@ -167,6 +167,7 @@ h2 {
 }
 .nav-title{
      color: black;
+     
 }
 .first-tone {
   color: #c24d2c; /* Red color for the first part of the title */
@@ -670,12 +671,20 @@ h2 {
 }
 
 
+#animatedImage{
+  transition: transform 0.3s ease;
 
+}
+   
 
 #animatedImage:hover {      
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
+  transform: scale(1.05);
 }
+
+
+
 
 /* #animatedImage {
 
@@ -709,7 +718,15 @@ h2 {
 #animatedImage2:hover {      
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
+  transform: scale(1.05);
 }
+
+#animatedImage2{
+  transition: transform 0.3s ease;
+  
+
+}
+   
 /* #animatedImage3:hover {
   transform: scale(1.1); 
   transition: transform 0.3s ease;
@@ -727,11 +744,24 @@ h2 {
 #animatedImage3:hover {      
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
+  transform: scale(1.05);
 }
+#animatedImage3{
+  transition: transform 0.3s ease;
+
+}
+
 #animatedImage4:hover {      
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
+  transform: scale(1.05);
 }
+#animatedImage4{
+  transition: transform 0.3s ease;
+
+}
+
+
 
 
 /* #animatedImage5:hover {
@@ -743,6 +773,11 @@ h2 {
 #animatedImage5:hover{
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
+  transform: scale(1.05);
+  }
+  #animatedImage5{
+    transition: transform 0.3s ease;
+  
   }
 /* #animatedImage6 {
   transition: border-radius 0.3s ease;
@@ -754,10 +789,20 @@ h2 {
 #animatedImage6:hover{
 filter: grayscale(100%); /* Converts the image to grayscale */
 transition: filter 0.3s ease;
+transform: scale(1.05);
+}
+#animatedImage6{
+  transition: transform 0.3s ease;
+
 }
 #animatedImage7:hover{
   filter: grayscale(100%); /* Converts the image to grayscale */
   transition: filter 0.3s ease;
+  transform: scale(1.05);
+  }
+  #animatedImage7{
+    transition: transform 0.3s ease;
+  
   }
 /* #animatedImage7 {
   transition: transform 0.3s ease; 
