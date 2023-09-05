@@ -646,7 +646,9 @@ h2 {
   margin-right: 10px; /* Add some spacing between the buttons */
 }
 
-
+.with-gap {
+  margin-left: 25px; /* Adjust the value as needed to control the space between buttons */
+}
 
 /* CSS for the image animation */
 .image-animation {
@@ -1133,7 +1135,6 @@ input[type="checkbox"] {
   width: 100%;
   background-color: #000000;
   border-radius: 0.625rem;
-  transition: all ease-in-out 0.2s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1151,7 +1152,18 @@ input[type="checkbox"] {
     top: -100rem;
     left: 0;
     width: 100%;
-    transition: all ease-in-out 0.4s;
+
+  }
+
+  
+  .nav-title h1{
+    text-align: center;
+    display: flex;
+   font-size: 45px;
+    align-items: center;
+    text-align: left; 
+   /* Center the text horizontally */
+    
   }
   .navbar--items ul {
     flex-direction: column;
@@ -1171,7 +1183,11 @@ input[type="checkbox"] {
   }
   .navbar--items.active {
     top: 0; /* Change this value to show all items */
+    
+
   }
+ 
+  
   .nav__hamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(0.45rem, 0.1875rem);
   }
@@ -1192,15 +1208,24 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     text-align: left; /* Align text to the left */
+    text-align: justify;
   }
 
-  
+  .hero--section--content h1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;  /* Center the text horizontally */
+    
+  }
   .hero--section--content p {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;  /* Center the text horizontally */
+    text-align: justify;
   }
 }
 
