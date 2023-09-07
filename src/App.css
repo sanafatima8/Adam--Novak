@@ -161,10 +161,9 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-
-  
   z-index: 1000;
 }
+
 .nav-title{
      color: black;
      
@@ -1183,7 +1182,8 @@ input[type="checkbox"] {
   }
   .navbar--items.active {
     top: 0; /* Change this value to show all items */
-    
+    transform: translateX(0); /* Show the menu instantly */
+
 
   }
  
