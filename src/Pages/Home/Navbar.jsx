@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import ScrollReveal from "scrollreveal";
 
 
 function Navbar() {
@@ -14,37 +13,6 @@ function Navbar() {
     setNavActive(false);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu;
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  useEffect(() => {
-    // Initialize Scroll Reveal
-    const sr = ScrollReveal();
-    
-    // Configure the animation for the navbar content
-    sr.reveal(".navbar--content", {
-      duration: 1000, // Animation duration in milliseconds
-      origin: "top", // Starting point of the animation
-      distance: "20px", // Distance the element moves during the animation
-      delay: 200, // Delay before the animation starts
-    });
-  }, []);
-
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu();
-    }
-  }, []);
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
