@@ -1299,30 +1299,25 @@ input[type="checkbox"] {
 
 
 
-@media screen and (max-width: 448px) {
- 
-  .with-gap{
+
+
+/* Media query for screens with a maximum width of 405px */
+@media screen and (max-width: 405px) {
+  .btn-3.with-gap {
     /* Adjust the value as needed to control the space between buttons */
-    
-     
-      margin-left: 10px;
-      margin-top: -30px;
- 
-     
+    margin-left: 20px;
+    margin-top: -30px;
   }
+
   .btn-3 {
-    display: inline-block; /* Display buttons as blocks (one below the other) by default */
-    margin: 11px 4px ; /* Add some vertical spacing between buttons */
-    text-align: center; /* Center-align button contents */
+    display: inline-block;
+    margin:  0px -15px; /* Add some horizontal spacing between buttons */
   }
 
   .btn-3 a {
-    
-    text-decoration: none; /* Remove underline from anchor elements */
-  
+    text-decoration: none !important; /* Remove underline from anchor elements */
   }
 }
-
 
 
 @media screen and (max-width: 768px) {
