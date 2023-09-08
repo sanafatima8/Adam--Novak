@@ -1320,6 +1320,27 @@ input[type="checkbox"] {
 }
 
 
+
+/* Media query for screens with a maximum width of 405px */
+@media screen and (max-width: 452px) {
+  .btn-3.with-gap {
+    /* Adjust the value as needed to control the space between buttons */
+    margin-left: 20px;
+    margin-top: -30px;
+  }
+
+  .btn-3 {
+    display: inline-block;
+    margin:  0px -15px; /* Add some horizontal spacing between buttons */
+  }
+
+  .btn-3 a {
+    text-decoration: none !important; /* Remove underline from anchor elements */
+  }
+}
+
+
+
 @media screen and (max-width: 768px) {
  
   #Adam.about--section {
