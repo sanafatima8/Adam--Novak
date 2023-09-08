@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 
 export default function FountainSection() {
   const quotes = [
@@ -10,51 +12,60 @@ export default function FountainSection() {
     },
     // ... Add other quotes ...
 ];
-  const [quoteIndex, setQuoteIndex] = useState(0);
+   const [quoteIndex, setQuoteIndex] = useState(0);
   const [quoteOffset, setQuoteOffset] = useState(0);
   const [forwards, setForwards] = useState(true);
 
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger the animation only once
+  });
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (forwards) {
-        if (quoteOffset >= quotes[quoteIndex].quote.length) {
-          setForwards(false);
+    let interval;
+    
+    if (inView) {
+      interval = setInterval(() => {
+        if (forwards) {
+          if (quoteOffset >= quotes[quoteIndex].quote.length) {
+            clearInterval(interval); // Stop typing after typing the full quote
+          } else {
+            setQuoteOffset(quoteOffset + 1);
+          }
         } else {
-          setQuoteOffset(quoteOffset + 1);
+          if (quoteOffset === 0) {
+            setForwards(true);
+            if (quoteIndex === quotes.length - 1) {
+              clearInterval(interval); // Stop typing after typing the last quote
+            } else {
+              setQuoteIndex((quoteIndex + 1) % quotes.length);
+            }
+          } else {
+            setQuoteOffset(quoteOffset - 1);
+          }
         }
-      } else {
-        if (quoteOffset === 0) {
-          setForwards(true);
-          setQuoteIndex((quoteIndex + 1) % quotes.length);
-        } else {
-          setQuoteOffset(quoteOffset - 1);
-        }
-      }
-    }, 70);
+      }, 70);
+    } else {
+      clearInterval(interval); // Clear interval if not in view
+    }
 
     return () => {
       clearInterval(interval);
     };
-  }, [quoteIndex, quoteOffset, forwards]);
+  }, [quoteIndex, quoteOffset, forwards, inView, quotes]);
 
   const currentQuote = quotes[quoteIndex];
   const animatedQuote = currentQuote.quote.substr(0, quoteOffset);
 
-
-
-
   return (
     <div className="hero-container">
-    <section id="quotes-section" className="quotes--section">
-      <div className="quotes">
-        <p className="quote">{animatedQuote}</p>
-        <p className="author">~ {currentQuote.author}</p>
-        <p className="affiliation">{currentQuote.affiliation}</p>
-      </div>
-    </section>
-
-
-
+      <section id="quotes-section" className="quotes--section">
+        <div className="quotes" ref={ref}>
+          <p className="quote">{animatedQuote}</p>
+          <p className="author">~ {currentQuote.author}</p>
+          <p className="affiliation">{currentQuote.affiliation}</p>
+        </div>
+      </section>
+   
 
 
     <section id="Fountain" className="about--section">

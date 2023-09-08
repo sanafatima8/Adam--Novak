@@ -35,13 +35,13 @@ export default function Podcast() {
 
       <div>
       <a href= "https://www.thebulwark.com/podcast-episode/why-the-head-of-story-at-one-of-hollywoods-biggest-agencies-writes-his-own/" target="_blank">
-      <button className="btn-2">
+      <button className="btn-3">
       <span>Listen</span><span>The Bulwark</span>
          </button>
       </a>
       
       <a href="https://blog.finaldraft.com/write-on-with-wmes-head-of-story-adam-novak?hs_amp=true " target="_blank">
-      <button className="btn-2 with-gap">
+      <button className="btn-3 lt with-gap">
       <span>Listen</span><span>iTunes</span>
          </button>
       </a>

@@ -1,5 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 
 export default function IndustrySection() {
     const quotes = [
@@ -10,51 +12,59 @@ export default function IndustrySection() {
         },
         // ... Add other quotes ...
     ];
-
-  const [quoteIndex, setQuoteIndex] = useState(0);
-  const [quoteOffset, setQuoteOffset] = useState(0);
-  const [forwards, setForwards] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-    if (forwards) {
-       if (quoteOffset >= quotes[quoteIndex].quote.length) {
-          setForwards(false);
-        } else {
-          setQuoteOffset(quoteOffset + 1);
-        }
-
-    } else {
-        if (quoteOffset === 0) {
-          setForwards(true);
-          setQuoteIndex((quoteIndex + 1) % quotes.length);
-        } else {
-          setQuoteOffset(quoteOffset - 1);
-        }
+    const [quoteIndex, setQuoteIndex] = useState(0);
+    const [quoteOffset, setQuoteOffset] = useState(0);
+    const [forwards, setForwards] = useState(true);
+  
+    const [ref, inView] = useInView({
+      triggerOnce: true, // Trigger the animation only once
+    });
+  
+    useEffect(() => {
+      let interval;
+      
+      if (inView) {
+        interval = setInterval(() => {
+          if (forwards) {
+            if (quoteOffset >= quotes[quoteIndex].quote.length) {
+              clearInterval(interval); // Stop typing after typing the full quote
+            } else {
+              setQuoteOffset(quoteOffset + 1);
+            }
+          } else {
+            if (quoteOffset === 0) {
+              setForwards(true);
+              if (quoteIndex === quotes.length - 1) {
+                clearInterval(interval); // Stop typing after typing the last quote
+              } else {
+                setQuoteIndex((quoteIndex + 1) % quotes.length);
+              }
+            } else {
+              setQuoteOffset(quoteOffset - 1);
+            }
+          }
+        }, 70);
+      } else {
+        clearInterval(interval); // Clear interval if not in view
       }
-    }, 70);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [quoteIndex, quoteOffset, forwards]);
-
-  const currentQuote = quotes[quoteIndex];
-  const animatedQuote = currentQuote.quote.substr(0, quoteOffset);
-
-
-
-
-  return (
-     <div className="hero-container">
-     <section id="quotes-section" className="quotes--section">
-      <div className="quotes">
-        <p className="quote">{animatedQuote}</p>
-        <p className="author">~ {currentQuote.author}</p>
-        <p className="affiliation">{currentQuote.affiliation}</p>
-      </div>
-     </section>
-
+  
+      return () => {
+        clearInterval(interval);
+      };
+    }, [quoteIndex, quoteOffset, forwards, inView, quotes]);
+  
+    const currentQuote = quotes[quoteIndex];
+    const animatedQuote = currentQuote.quote.substr(0, quoteOffset);
+  
+    return (
+      <div className="hero-container">
+        <section id="quotes-section" className="quotes--section">
+          <div className="quotes" ref={ref}>
+            <p className="quote">{animatedQuote}</p>
+            <p className="author">~ {currentQuote.author}</p>
+            <p className="affiliation">{currentQuote.affiliation}</p>
+          </div>
+        </section>
       <section id="Industry" className="about--section">
     
       <div className="hero--section--content--box about--section--box">

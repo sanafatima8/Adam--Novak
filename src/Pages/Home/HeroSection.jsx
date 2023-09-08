@@ -23,7 +23,7 @@ export default function HeroSection() {
       affiliation: "author of Waiting for Lipchitz at Chateau Marmont"
     },
     {
-      quote: "\"Adam Novak has a merciless eye for a society in which striving replaces every consideration of morality.\"",
+      quote: "\" Novak has a merciless eye for a society in which striving replaces every consideration of morality.\"",
       author: "Michael Tolkin",
       affiliation: "author of <i>The Player</i>"
     }

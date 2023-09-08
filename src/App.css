@@ -595,6 +595,7 @@ h2 {
   background-color: rgb(71, 82, 196);
 }
 
+
 /*----------------------------------------*/
 .btn-2
 {
@@ -644,6 +645,41 @@ h2 {
 .additional-button {
   margin-right: 10px; /* Add some spacing between the buttons */
 }
+
+.btn-3
+{
+
+  
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 2px 16px;
+  height: 32px;
+  min-width: 60px;
+  min-height: 32px;
+  border: none;
+  color: #fff;
+  background-color: rgb(88, 101, 242);
+  transition: background-color .17s ease,color .17s ease;
+  border-radius: 2rem;
+  text-decoration: none !important; /* Remove underline from anchor elements */
+
+ 
+ 
+ 
+
+}
+
+.btn-3:hover{
+  background-color: rgb(71, 82, 196);
+
+}
+
 
 .with-gap {
   margin-left: 25px; /* Adjust the value as needed to control the space between buttons */
@@ -1231,3 +1267,67 @@ input[type="checkbox"] {
 
 
 /* Responsive Screens Ends*/
+
+@media screen and (max-width: 768px) {
+  .about--section--img > img  {
+    padding-top: 5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+  .with-gap{
+    /* Adjust the value as needed to control the space between buttons */
+    
+     
+      margin-left: 12rem;
+      margin-top: -30px;
+ 
+     
+  }
+  .btn-3{
+    display: inline-block;
+    margin-left: 12px;
+
+  }
+  .btn-3 a {
+    text-decoration: none!important; /* Remove underline from anchor elements */
+  }
+}
+
+
+
+@media screen and (max-width: 448px) {
+ 
+  .with-gap{
+    /* Adjust the value as needed to control the space between buttons */
+    
+     
+      margin-left: 10px;
+      margin-top: -30px;
+ 
+     
+  }
+  .btn-3 {
+    display: inline-block; /* Display buttons as blocks (one below the other) by default */
+    margin: 11px 4px ; /* Add some vertical spacing between buttons */
+    text-align: center; /* Center-align button contents */
+  }
+
+  .btn-3 a {
+    
+    text-decoration: none; /* Remove underline from anchor elements */
+  
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+  #Adam.about--section {
+    margin-bottom: 7rem;
+  }
+}
