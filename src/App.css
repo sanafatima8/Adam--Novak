@@ -654,7 +654,6 @@ h2 {
   display: inline-block;
   outline: none;
   cursor: pointer;
-  border-radius: 3px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -682,7 +681,7 @@ h2 {
 
 
 .with-gap {
-  margin-left: 25px; /* Adjust the value as needed to control the space between buttons */
+  margin-left: 9px; /* Adjust the value as needed to control the space between buttons */
 }
 
 /* CSS for the image animation */
@@ -1266,95 +1265,27 @@ input[type="checkbox"] {
 }
 
 
+/* Apply styles for screens between 320px and 767px (common mobile devices) */
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .btn-3.with-gap {
+    /* Adjust the value as needed to control the space between buttons */
+    margin-left: 20px;
+    margin-top: -30px;
+  }
+
+  .btn-3 {
+    display: inline-block;
+    margin: 0px -15px; /* Add some horizontal spacing between buttons */
+  }
+
+  .btn-3 a {
+    text-decoration: none !important; /* Remove underline from anchor elements */
+  }
+}
+
+
 /* Responsive Screens Ends*/
 
-@media screen and (max-width: 768px) {
-  .about--section--img > img  {
-    padding-top: 5rem;
-  }
-
-}
-
-
-@media screen and (max-width: 768px) {
- 
-  .btn-3.with-gap{
-    /* Adjust the value as needed to control the space between buttons */
-    
-     
-      margin-left: 2rem;
-      margin-top: -30px;
- 
-     
-  }
-  .btn-3{
-    display: inline-block;
-    margin-left: 12px;
-
-  }
-  .btn-3 a {
-    text-decoration: none!important; /* Remove underline from anchor elements */
-  }
-}
-
-
-
-
-
-/* Media query for screens with a maximum width of 405px */
-@media screen and (max-width: 405px) {
-  .btn-3.with-gap {
-    /* Adjust the value as needed to control the space between buttons */
-    margin-left: 20px;
-    margin-top: -30px;
-  }
-
-  .btn-3 {
-    display: inline-block;
-    margin:  0px -15px; /* Add some horizontal spacing between buttons */
-  }
-
-  .btn-3 a {
-    text-decoration: none !important; /* Remove underline from anchor elements */
-  }
-}
-
-
-
-/* Media query for screens with a maximum width of 405px */
-@media screen and (max-width: 452px) {
-  .btn-3.with-gap {
-    /* Adjust the value as needed to control the space between buttons */
-    margin-left: 20px;
-    margin-top: -30px;
-  }
-
-  .btn-3 {
-    display: inline-block;
-    margin:  0px -15px; /* Add some horizontal spacing between buttons */
-  }
-
-  .btn-3 a {
-    text-decoration: none !important; /* Remove underline from anchor elements */
-  }
-}
-
-@media screen and (max-width: 473px) {
-  .btn-3.with-gap {
-    /* Adjust the value as needed to control the space between buttons */
-    margin-left: 23px;
-    margin-top: -30px;
-  }
-
-  .btn-3 {
-    display: inline-block;
-    margin:  0px -15px; /* Add some horizontal spacing between buttons */
-  }
-
-  .btn-3 a {
-    text-decoration: none !important; /* Remove underline from anchor elements */
-  }
-}
 
 
 
