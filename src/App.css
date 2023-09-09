@@ -1265,24 +1265,23 @@ input[type="checkbox"] {
 }
 
 /* Apply styles for screens between 320px and 767px (common mobile devices) */
-@media screen and (min-width: 100px) and (max-width: 768px) {
+/* @media screen and (min-width: 100px) and (max-width: 768px) {
   .btn-3.with-gap {
-    /* Adjust the value as needed to control the space between buttons */
-    margin-left: 20px !important ;
-    margin-top: -30px !important ;
+    margin-left: 20px;
+    margin-top: -30px ;
   }
 
   .btn-3 {
-    display: inline-block !important ;
+    display: inline-block ;
    
-    margin: 0px -15px !important ; /* Add some horizontal spacing between buttons */
+    margin: 0px -15px  ; 
   }
 
   .btn-3 a {
-    text-decoration: none !important; /* Remove underline from anchor elements */
+    text-decoration: none !important;
   }
 }
-
+ */
 
 /* Responsive Screens Ends*/
 
@@ -1379,3 +1378,31 @@ input[type="checkbox"] {
     text-decoration: none !important; 
 }
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+  .btn-3.with-gap {
+  margin-top: 4rem;
+  }
+
+  .btn-3 {
+     
+  }
+
+  .btn-3 a {
+    text-decoration: none !important;
+  }
+}

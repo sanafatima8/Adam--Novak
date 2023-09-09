@@ -41,7 +41,7 @@ export default function Podcast() {
       </a>
       
       <a href="https://blog.finaldraft.com/write-on-with-wmes-head-of-story-adam-novak?hs_amp=true " target="_blank">
-      <button className="btn-3 lt with-gap">
+      <button className="btn-3 with-gap">
       <span>Listen</span><span>iTunes</span>
          </button>
       </a>
