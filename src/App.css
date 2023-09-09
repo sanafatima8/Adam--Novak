@@ -1395,12 +1395,12 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
   .btn-3.with-gap {
-    margin-left: 20px;
-    margin-top: 10px ;
+    margin-left: 11rem ;
+    display: inline-block ;
+
   }
 
   .btn-3 {
-    display: inline-block ;
    
    
   }
