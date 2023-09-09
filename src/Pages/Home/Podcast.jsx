@@ -33,7 +33,7 @@ export default function Podcast() {
        <p className="section--title">Bulwark Rat Park podcast - Conversation with Tyler Knigh</p>
       
 
-      <div>
+      <div className='button-container'>
       <a href= "https://www.thebulwark.com/podcast-episode/why-the-head-of-story-at-one-of-hollywoods-biggest-agencies-writes-his-own/" target="_blank">
       <button className="btn-3">
       <span>Listen</span><span>The Bulwark</span>

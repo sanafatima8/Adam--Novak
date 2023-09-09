@@ -1394,18 +1394,18 @@ input[type="checkbox"] {
 
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
-  .btn-3.with-gap {
-    margin-left: 11rem ;
-    display: inline-block ;
-
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-
+  
   .btn-3 {
-   
-   
+    /* Add your button styles here */
   }
-
-  .btn-3 a {
-    text-decoration: none !important;
+  
+  .with-gap {
+    margin-left: 10px; /* Adjust the margin as needed to control spacing between buttons */
   }
+  
 }
