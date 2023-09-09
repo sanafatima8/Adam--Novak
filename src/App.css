@@ -1278,11 +1278,11 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 768px) {
  
-  .with-gap{
+  .btn-3.with-gap{
     /* Adjust the value as needed to control the space between buttons */
     
      
-      margin-left: 12rem;
+      margin-left: 2rem;
       margin-top: -30px;
  
      
@@ -1326,6 +1326,23 @@ input[type="checkbox"] {
   .btn-3.with-gap {
     /* Adjust the value as needed to control the space between buttons */
     margin-left: 20px;
+    margin-top: -30px;
+  }
+
+  .btn-3 {
+    display: inline-block;
+    margin:  0px -15px; /* Add some horizontal spacing between buttons */
+  }
+
+  .btn-3 a {
+    text-decoration: none !important; /* Remove underline from anchor elements */
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .btn-3.with-gap {
+    /* Adjust the value as needed to control the space between buttons */
+    margin-left: 23px;
     margin-top: -30px;
   }
 
